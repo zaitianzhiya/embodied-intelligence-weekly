@@ -11,7 +11,7 @@ This project inherits methodology from `github-weekly-digest` — same configura
 ## Architecture
 
 ```
-30 sources → TopicSearchCollector → Merge/Dedup → 5-dim Score → DeepAnalyzer (LLM) → MarkdownRenderer → GitHub Actions commit
+30 sources → RealSearchCollector → Merge/Dedup → 5-dim Score → DeepAnalyzer (LLM) → MarkdownRenderer → GitHub Actions commit
                     (12 ecosystems, Tier 1/2)      |                 |                   |
                                                     v                 v                   v
                                                Confidence A/B/C/D  "No naked jargon"   weekly/YYYY-NN.md
@@ -22,7 +22,7 @@ This project inherits methodology from `github-weekly-digest` — same configura
 
 | Module | Path | Purpose |
 |--------|------|---------|
-| Collectors | `src/collectors/` | `base.py` (EventRecord, SourceCitation, BaseCollector), `web_search.py` (TopicSearchCollector — keyword-based event discovery) |
+| Collectors | `src/collectors/` | `base.py` (EventRecord, SourceCitation, BaseCollector), `web_search.py` (RealSearchCollector — keyword-based event discovery) |
 | Filters | `src/filters/` | `dedup.py` (JSON state file dedup), `quality.py` (basic title+citation check), `scorer.py` (cross-ecosystem independence scoring) |
 | AI | `src/ai/` | `llm_client.py` (multi-provider: Gemini/DeepSeek/Qwen/Anthropic/OpenAI), `deep_analyzer.py` (weekly analysis), `feedback_loader.py` |
 | Render | `src/render/` | `markdown_weekly.py` (weekly report + category index) |
@@ -32,7 +32,7 @@ This project inherits methodology from `github-weekly-digest` — same configura
 
 ## Data flow
 
-1. **Collect**: `TopicSearchCollector` generates EventRecords from each source's keyword list. Each record carries a SourceCitation with tier + ecosystem.
+1. **Collect**: `RealSearchCollector` generates EventRecords from each source's keyword list. Each record carries a SourceCitation with tier + ecosystem.
 2. **Merge**: Records with identical event_id merge citation chains.
 3. **Dedup**: `Deduplicator` checks JSON state file — already-seen events are skipped.
 4. **Filter**: `QualityFilter` ensures every record has a title and at least one citation.
@@ -77,7 +77,7 @@ python run.py --mode weekly
 
 ## Important design decisions
 
-- **TopicSearchCollector**: Unlike github-weekly-digest which scrapes GitHub Trending, embodied AI events come from distributed sources. The collector uses pre-configured keyword lists per source — in production these would hit real search APIs, but the architecture supports AI enrichment of keyword-hit data.
+- **RealSearchCollector**: Unlike github-weekly-digest which scrapes GitHub Trending, embodied AI events come from distributed sources. The collector uses pre-configured keyword lists per source — in production these would hit real search APIs, but the architecture supports AI enrichment of keyword-hit data.
 - **30 sources in 12 ecosystems**: More than github-weekly-digest (8) because no single "GitHub Trending" exists for embodied AI. Heavy Chinese/English ecosystem divide.
 - **LLM graceful degradation**: If no API key is set, the pipeline produces data-only reports — never blocks.
 - **All imports are absolute**: `from src.collectors.base import ...` — compatible with `run.py` at repo root.
