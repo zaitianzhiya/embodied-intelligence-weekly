@@ -1,0 +1,362 @@
+# 具身智能周报 — 信息源配置
+# tier: 1 = 原始数据源, 2 = 引用数据源
+# ecosystem: 用于来源独立性权重修正
+
+sources:
+  # === Tier 1: 头部企业官方 (12源) ===
+  tesla_optimus:
+    name: "特斯拉 Optimus"
+    tier: 1
+    ecosystem: "global_leader"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["Tesla Optimus", "擎天柱", "Tesla Bot", "Optimus Gen"]
+
+  figure_ai:
+    name: "Figure AI"
+    tier: 1
+    ecosystem: "global_leader"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["Figure AI", "Figure 03", "Figure robot", "Helix model"]
+
+  unitree:
+    name: "宇树科技"
+    tier: 1
+    ecosystem: "cn_leader"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["宇树科技", "Unitree", "宇树机器人", "H1", "G1"]
+
+  agibot:
+    name: "智元机器人"
+    tier: 1
+    ecosystem: "cn_leader"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["智元机器人", "Agibot", "稚晖君", "远征", "灵犀"]
+
+  boston_dynamics:
+    name: "Boston Dynamics"
+    tier: 1
+    ecosystem: "global_leader"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["Boston Dynamics", "Atlas", "Spot", "electric Atlas"]
+
+  agility_robotics:
+    name: "Agility Robotics"
+    tier: 1
+    ecosystem: "global_leader"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["Agility Robotics", "Digit", "RoboFab"]
+
+  skild_ai:
+    name: "Skild AI"
+    tier: 1
+    ecosystem: "global_startup"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["Skild AI", "Skild brain", "robot foundation model"]
+
+  physical_intelligence:
+    name: "Physical Intelligence (π)"
+    tier: 1
+    ecosystem: "global_startup"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["Physical Intelligence", "π model", "Pi robot", "robot foundation model"]
+
+  onex_tech:
+    name: "1X Technologies"
+    tier: 1
+    ecosystem: "global_leader"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["1X Technologies", "NEO", "EVE robot", "1X robot"]
+
+  xiaopeng_robot:
+    name: "小鹏机器人"
+    tier: 1
+    ecosystem: "cn_leader"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["小鹏机器人", "小鹏Iron", "XPENG robot"]
+
+  stardust_robot:
+    name: "星动纪元"
+    tier: 1
+    ecosystem: "cn_leader"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["星动纪元", "StarDust", "星动STAR"]
+
+  galbot:
+    name: "银河通用"
+    tier: 1
+    ecosystem: "cn_startup"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["银河通用", "Galbot", "盖博特"]
+
+  # === Tier 1: 学术界 (3源) ===
+  arxiv_robotics:
+    name: "arXiv cs.RO"
+    tier: 1
+    ecosystem: "academia"
+    type: rss
+    url: "http://export.arxiv.org/rss/cs.RO"
+    enabled: true
+    frequency: daily
+    max_items: 30
+
+  arxiv_ai_embodied:
+    name: "arXiv cs.AI (Embodied)"
+    tier: 1
+    ecosystem: "academia"
+    type: rss
+    url: "http://export.arxiv.org/rss/cs.AI"
+    enabled: true
+    frequency: daily
+    max_items: 20
+    filter_keywords: ["embodied", "robot", "manipulation", "navigation", "VLA", "humanoid"]
+
+  github_embodied:
+    name: "GitHub 具身智能开源项目"
+    tier: 1
+    ecosystem: "open_source"
+    type: api
+    enabled: true
+    frequency: weekly
+    max_items: 20
+    topics:
+      - "embodied-ai"
+      - "vla"
+      - "robot-learning"
+      - "humanoid-robot"
+      - "robotics"
+      - "robot-manipulation"
+      - "sim-to-real"
+
+  # === Tier 1: 中国政策监管 (2源) ===
+  miit_robot:
+    name: "工信部机器人政策"
+    tier: 1
+    ecosystem: "cn_government"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["人形机器人", "具身智能", "机器人产业政策", "工信部"]
+
+  cac_robot:
+    name: "网信办 AI 监管"
+    tier: 1
+    ecosystem: "cn_government"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["具身智能", "人形机器人", "AI监管", "网信办"]
+
+  # === Tier 2: 中国科技媒体 (5源) ===
+  media_36kr_robot:
+    name: "36氪 具身智能"
+    tier: 2
+    ecosystem: "cn_tech_media"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["具身智能", "人形机器人", "VLA", "机器人融资"]
+
+  media_jiqizhixin:
+    name: "机器之心"
+    tier: 2
+    ecosystem: "cn_tech_media"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["具身智能", "人形机器人", "VLA模型", "机器人学习"]
+
+  media_liangzwei:
+    name: "量子位"
+    tier: 2
+    ecosystem: "cn_tech_media"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["具身智能", "人形机器人", "机器人AI", "VLA"]
+
+  media_ithome_robot:
+    name: "IT之家 机器人"
+    tier: 2
+    ecosystem: "cn_tech_media"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["人形机器人", "具身智能", "Tesla Optimus", "宇树"]
+
+  media_jiemian_robot:
+    name: "界面新闻 具身智能"
+    tier: 2
+    ecosystem: "cn_tech_media"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["具身智能", "人形机器人", "机器人产业"]
+
+  # === Tier 2: 英文科技媒体 (3源) ===
+  media_techcrunch:
+    name: "TechCrunch Robotics"
+    tier: 2
+    ecosystem: "en_tech_media"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["humanoid robot", "embodied AI", "robot startup", "VLA"]
+
+  media_theverge:
+    name: "The Verge AI"
+    tier: 2
+    ecosystem: "en_tech_media"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["humanoid robot", "embodied AI", "Tesla Optimus", "Figure"]
+
+  media_venturebeat:
+    name: "VentureBeat AI"
+    tier: 2
+    ecosystem: "en_tech_media"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["embodied AI", "humanoid robot", "robot learning", "VLA"]
+
+  # === Tier 2: 行业研究 (3源) ===
+  research_idc:
+    name: "IDC 机器人研究"
+    tier: 2
+    ecosystem: "industry_research"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["humanoid robot", "embodied AI", "market forecast"]
+
+  research_trendforce:
+    name: "TrendForce"
+    tier: 2
+    ecosystem: "industry_research"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["humanoid robot", "embodied AI", "robot market"]
+
+  research_caict:
+    name: "中国信通院"
+    tier: 2
+    ecosystem: "cn_government"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["具身智能", "人形机器人", "发展报告"]
+
+  # === Tier 2: 资本市场/融资 (2源) ===
+  finance_cv:
+    name: "投中网"
+    tier: 2
+    ecosystem: "cn_finance"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["具身智能", "机器人融资", "人形机器人投资"]
+
+  finance_eastmoney:
+    name: "东方财富 机器人板块"
+    tier: 2
+    ecosystem: "cn_finance"
+    type: web_search
+    enabled: true
+    frequency: weekly
+    keywords: ["人形机器人", "具身智能", "机器人概念股"]
+
+  # === Tier 2: GitHub 聚合平台 (2源) ===
+  awesome_vla:
+    name: "Awesome-VLA 论文列表"
+    tier: 2
+    ecosystem: "open_source"
+    type: raw_github_api
+    repo: "Orlando-CS/Awesome-VLA"
+    enabled: true
+    frequency: weekly
+
+  dive_into_embodied:
+    name: "Datawhale 具身智能教程"
+    tier: 2
+    ecosystem: "cn_open_source"
+    type: raw_github_api
+    repo: "datawhalechina/dive-into-embodied-ai"
+    enabled: true
+    frequency: weekly
+
+# 生态分组（用于独立性权重修正）
+ecosystems:
+  global_leader:
+    name: "全球头部企业"
+    sources: ["tesla_optimus", "figure_ai", "boston_dynamics", "agility_robotics", "onex_tech"]
+    independence_weight: 1.0
+  cn_leader:
+    name: "中国头部企业"
+    sources: ["unitree", "agibot", "xiaopeng_robot", "stardust_robot"]
+    independence_weight: 1.0
+  global_startup:
+    name: "全球创业公司"
+    sources: ["skild_ai", "physical_intelligence"]
+    independence_weight: 1.0
+  cn_startup:
+    name: "中国创业公司"
+    sources: ["galbot"]
+    independence_weight: 1.0
+  academia:
+    name: "学术界"
+    sources: ["arxiv_robotics", "arxiv_ai_embodied"]
+    independence_weight: 1.0
+  open_source:
+    name: "开源社区"
+    sources: ["github_embodied", "awesome_vla"]
+    independence_weight: 0.8
+  cn_open_source:
+    name: "中文开源"
+    sources: ["dive_into_embodied"]
+    independence_weight: 1.0
+  cn_government:
+    name: "中国政府与研究院"
+    sources: ["miit_robot", "cac_robot", "research_caict"]
+    independence_weight: 0.7
+  cn_tech_media:
+    name: "中国科技媒体"
+    sources: ["media_36kr_robot", "media_jiqizhixin", "media_liangzwei", "media_ithome_robot", "media_jiemian_robot"]
+    independence_weight: 0.6
+  en_tech_media:
+    name: "英文科技媒体"
+    sources: ["media_techcrunch", "media_theverge", "media_venturebeat"]
+    independence_weight: 0.7
+  industry_research:
+    name: "行业研究"
+    sources: ["research_idc", "research_trendforce"]
+    independence_weight: 0.8
+  cn_finance:
+    name: "中国资本市场"
+    sources: ["finance_cv", "finance_eastmoney"]
+    independence_weight: 0.7

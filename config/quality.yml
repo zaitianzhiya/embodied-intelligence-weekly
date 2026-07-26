@@ -1,0 +1,142 @@
+# 具身智能 — 评价体系配置
+
+# 五维影响力权重
+weights:
+  industry_disruption: 30    # 行业颠覆性 — 对具身智能产业格局的重塑程度
+  technical_breakthrough: 25 # 技术突破度 — 技术本身的新颖性和难度
+  commercialization: 20      # 商业化进展 — 量产/交付/落地/IPO
+  ecosystem_impact: 15       # 生态影响力 — 对开发者/供应链/下游的影响
+  policy_capital: 10         # 政策资本信号 — 融资/政策/市场预期
+
+# 置信度等级
+confidence:
+  grade_a:
+    threshold: 80
+    label: "A"
+    description: "多源交叉验证，至少1个Tier 1 + 2个Tier 2独立来源确认"
+  grade_b:
+    threshold: 60
+    label: "B"
+    description: "单一Tier 1源或两个独立Tier 2源，基本可信"
+  grade_c:
+    threshold: 40
+    label: "C"
+    description: "单一Tier 2源，需后续追踪确认"
+  grade_d:
+    threshold: 0
+    label: "D"
+    description: "信号微弱，仅供参考"
+
+# 质量过滤
+filters:
+  exclude_fork: true
+  max_inactive_days: 90
+  require_license: false                              # 具身智能开源项目不严格要求 License
+  min_readme_length: 0                                # 不限制 README 长度（研究项目可能文档较少）
+
+# 六维分类体系
+categories:
+  - id: "hardware_platform"
+    name: "机器人硬件平台"
+    label: "#hardware"
+    description: "人形机器人/机械臂/灵巧手等硬件本体发布"
+
+  - id: "vla_model"
+    name: "VLA 模型与算法"
+    label: "#vla-model"
+    description: "Vision-Language-Action模型、世界模型、端到端学习"
+
+  - id: "simulation"
+    name: "仿真与数据"
+    label: "#simulation"
+    description: "仿真平台、sim-to-real、数据采集、遥操作"
+
+  - id: "manipulation"
+    name: "操作与感知"
+    label: "#manipulation"
+    description: "灵巧操作、抓取、导航、SLAM、触觉感知"
+
+  - id: "industry"
+    name: "产业化与商业"
+    label: "#industry"
+    description: "量产、交付、融资、IPO、产业链动态"
+
+  - id: "policy"
+    name: "政策与监管"
+    label: "#policy"
+    description: "政府政策、行业标准、安全监管、伦理"
+
+# 自动分类关键词映射
+category_mapping:
+  hardware_platform:
+    - "人形机器人"
+    - "humanoid"
+    - "机械臂"
+    - "manipulator"
+    - "灵巧手"
+    - "dexterous hand"
+    - "双足"
+    - "bipedal"
+    - "关节"
+    - "actuator"
+    - "减速器"
+  vla_model:
+    - "VLA"
+    - "Vision-Language-Action"
+    - "world model"
+    - "世界模型"
+    - "foundation model"
+    - "end-to-end"
+    - "端到端"
+    - "transformer"
+    - "diffusion policy"
+    - "imitation learning"
+    - "reinforcement learning"
+    - "GR00T"
+    - "RT-2"
+    - "embodied foundation model"
+  simulation:
+    - "sim-to-real"
+    - "simulation"
+    - "仿真"
+    - "Isaac"
+    - "Omniverse"
+    - "数字孪生"
+    - "teleoperation"
+    - "遥操作"
+    - "data collection"
+    - "数据采集"
+  manipulation:
+    - "manipulation"
+    - "操作"
+    - "grasping"
+    - "抓取"
+    - "navigation"
+    - "导航"
+    - "SLAM"
+    - "触觉"
+    - "tactile"
+    - "dexterous"
+  industry:
+    - "量产"
+    - "交付"
+    - "商业化"
+    - "融资"
+    - "IPO"
+    - "上市"
+    - "产业链"
+    - "供应商"
+    - "RoboFab"
+    - "factory"
+    - "工厂"
+    - "产线"
+  policy:
+    - "政策"
+    - "监管"
+    - "标准"
+    - "安全"
+    - "伦理"
+    - "出口管制"
+    - "政府"
+    - "网信办"
+    - "工信部"

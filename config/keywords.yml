@@ -1,0 +1,131 @@
+# 具身智能 — 关键词配置
+# 控制事件筛选的优先级和倾向
+
+# 正向加权关键词（匹配后提升事件重要性）
+positive_keywords:
+  # 核心技术
+  - "VLA Vision-Language-Action"
+  - "world model"
+  - "sim-to-real"
+  - "foundation model"
+  - "end-to-end"
+  - "whole-body control"
+  - "dexterous manipulation"
+  - "bimanual"
+  - "imitation learning"
+  - "reinforcement learning"
+  - "teleoperation"
+  - "robot learning"
+  - "embodied foundation model"
+
+  # 中国自主
+  - "自主可控"
+  - "国产替代"
+  - "自主研发"
+  - "国产芯片"
+  - "国产传感器"
+  - "国产关节"
+  - "国产减速器"
+
+  # 产业化
+  - "量产"
+  - "交付"
+  - "商业化"
+  - "落地"
+  - "工厂部署"
+  - "产线"
+  - "IPO"
+
+  # 突破性
+  - "首次"
+  - "突破"
+  - "重大进展"
+  - "里程碑"
+  - "超越"
+  - "SOTA"
+
+# 负向降权关键词（匹配后降低事件优先级）
+negative_keywords:
+  - "股价波动"
+  - "涨停"
+  - "跌停"
+  - "概念炒作"
+  - "营销"
+  - "广告投放"
+
+# 重点关注的企业和组织
+tracked_organizations:
+  # 全球头部
+  - name: "Tesla Optimus"
+    aliases: ["特斯拉", "Optimus", "擎天柱"]
+    priority: "critical"
+
+  - name: "Figure AI"
+    aliases: ["Figure", "Figure AI"]
+    priority: "critical"
+
+  - name: "Boston Dynamics"
+    aliases: ["波士顿动力", "Atlas", "Spot"]
+    priority: "high"
+
+  - name: "宇树科技"
+    aliases: ["Unitree", "宇树", "H1", "G1"]
+    priority: "critical"
+
+  - name: "智元机器人"
+    aliases: ["Agibot", "智元", "稚晖君", "远征", "灵犀"]
+    priority: "critical"
+
+  - name: "Physical Intelligence"
+    aliases: ["π", "Pi robot"]
+    priority: "high"
+
+  - name: "Skild AI"
+    aliases: ["Skild", "Skild brain"]
+    priority: "high"
+
+  # 重点跟踪
+  - name: "Agility Robotics"
+    aliases: ["Digit", "RoboFab"]
+    priority: "high"
+
+  - name: "1X Technologies"
+    aliases: ["1X", "NEO", "EVE"]
+    priority: "high"
+
+  - name: "小鹏机器人"
+    aliases: ["小鹏Iron", "XPENG robot"]
+    priority: "high"
+
+  - name: "星动纪元"
+    aliases: ["星动", "StarDust"]
+    priority: "high"
+
+  - name: "银河通用"
+    aliases: ["Galbot", "盖博特"]
+    priority: "medium"
+
+  # 仿真与开源
+  - name: "NVIDIA"
+    aliases: ["英伟达", "Isaac", "Omniverse", "GR00T"]
+    priority: "high"
+
+  - name: "Google DeepMind"
+    aliases: ["DeepMind", "RT-2", "RT-X", "RoboCat", "Gemini Robotics"]
+    priority: "high"
+
+  - name: "OpenAI"
+    aliases: ["OpenAI", "GPT-5 robotics", "OpenAI robot"]
+    priority: "high"
+
+# 重点关注的研究机构
+tracked_research:
+  - "Stanford Vision and Learning Lab"
+  - "MIT CSAIL"
+  - "CMU Robotics Institute"
+  - "UC Berkeley BAIR"
+  - "ETH Zurich"
+  - "清华叉院"
+  - "上交机动学院"
+  - "港科大"
+  - "上海人工智能实验室"
