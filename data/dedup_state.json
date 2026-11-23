@@ -222,7 +222,7 @@
     },
     "evt:d4842f64c687": {
       "first_seen_week": "2026-W40",
-      "last_seen_week": "2026-W47",
+      "last_seen_week": "2026-W48",
       "title": "Artificial Intelligence"
     },
     "evt:0a2f100cb241": {
@@ -1749,6 +1749,246 @@
       "first_seen_week": "2026-W47",
       "last_seen_week": "2026-W47",
       "title": "锦观丨以“生态密度”涵养“产业雨林”"
+    },
+    "evt:c11709f65fe1": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "美股异动丨特斯拉盘前涨近5% FSD V15启动推送 安全关键场景处理能力提升25倍"
+    },
+    "evt:34eddb58b376": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "特斯拉FSD V15启动推送 盘前涨近5%报362.80美元"
+    },
+    "evt:3d6b28625730": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "特斯拉启动FSD V15推送 车机新增Tesla Reality View实景视图"
+    },
+    "evt:a2380d594106": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "【三分半看懂】现实版GTA来了？特斯拉FSD V15自带上帝视角的实景视图，到底是怎么做出来的？老车主能用上吗？"
+    },
+    "evt:6b0bdae62f2f": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "Year-end adjustment for 2026: 3 things to check before asking AI (actual measurements for a year with changing figures)"
+    },
+    "evt:62e5f31ddedd": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "National security and AI figures urge DOJ to probe what Nvidia knew about chip smuggling"
+    },
+    "evt:b726b8368168": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "Who's Buying And Who's Selling AI? The Full List, Next To 2000"
+    },
+    "evt:d8d19d7906b2": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "Week ahead: Wall Street looks for Thanksgiving lift as Nvidia rebound puts AI trade back in focus"
+    },
+    "evt:947ed0073c78": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "宇树科技董事长王兴兴出任杭州市新生代企业家联谊会会长"
+    },
+    "evt:00201a8a077f": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "宇树科技股价大涨8%，市值突破2500亿背后究竟隐藏了什么？"
+    },
+    "evt:68f52128b08c": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "人形机器人概念走强，宇树科技盘中一度涨近9%"
+    },
+    "evt:d64f94e0a63f": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "A股奇迹日！宇树科技“20cm”涨停"
+    },
+    "evt:a90e7f9cdb7f": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "宇树科技罕见涨停！机器人ETF华安(159039)标的指数强势涨近9%"
+    },
+    "evt:d6ca7d8bc44b": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "智元机器人并线芯片封测 特变电工更名 脑机接口企业增长"
+    },
+    "evt:a5c525c78c31": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "智元机器人上岗芯片封测产线"
+    },
+    "evt:6e4819825d6f": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "格力博联手智元体系布局商用清洁与具身智能机器人"
+    },
+    "evt:beaefbe105d6": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "智元与蓝思科技达成战略合作，精灵G2机器人进手机测试线"
+    },
+    "evt:e5cfbec807bf": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "智元精灵G2在长电科技临港工厂成功并线，机器人上岗“造芯”"
+    },
+    "evt:7b40d9c043f9": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "Boston Dynamics takes humanoid Atlas into semiconductor manufacturing"
+    },
+    "evt:b46be02777f1": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "Boston Dynamics, GlobalFoundries expand robotics collaboration"
+    },
+    "evt:b982e320acef": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "GlobalFoundries to test Boston Dynamics' robots at its semiconductor fabs -..."
+    },
+    "evt:1cee0d28c9a8": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "Boston Dynamics’ Atlas Heads to Chip Plants in 2027"
+    },
+    "evt:235e014b60b9": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "BSX Stock Price Prediction 2026-2027 | Boston Scientific Forecast | 24/7 Wall..."
+    },
+    "evt:50c00feeb6e7": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "Hidden rules, not tariffs, are the real hurdle to expanding in South-east Asia"
+    },
+    "evt:fb8244eb2f12": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "Orange sets out agentic AI-ready networking architecture future"
+    },
+    "evt:3c8727a25ecc": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "NVIDIA offers free open models, why does the world modeling company charge?"
+    },
+    "evt:4b838800aa23": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "OpenAIがロボット専任チームを解散 ロボ開発の競争軸は「頭脳」から「現場データ」へ"
+    },
+    "evt:3a6fc2c816a3": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "前沿模型竞争步入深水区，为何 Post-Training 亟需好用的「训练场」？"
+    },
+    "evt:a52459719d94": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "融资33亿、估值233亿，英伟达AMD押注的这家公司为何两年只造了40台机器人？"
+    },
+    "evt:8ca12b908d81": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "Jumptuit Introduces Physical-World AI for Biotechnology, Spanning Ten Domains from Green to Red Bio"
+    },
+    "evt:f128311597a5": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "What is physical AI? How Trainium accelerates how robots learn."
+    },
+    "evt:8edc3872d5e6": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "The AI That Can Build In Physical World: Godela Releases Godel-1"
+    },
+    "evt:90531d310578": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "Applied Industrial Technologies (AIT) Stock Looks Reasonable On Cash Flow"
+    },
+    "evt:6504386e3fa4": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "Westinghouse Air Brake Technologies Corp (WAB) Shares Fall 3.4%"
+    },
+    "evt:ac305cfe812c": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "KEYS Maintained by Barclays -- Price Target Raised to $439"
+    },
+    "evt:7b0de8212451": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "GTM Maintained by Morgan Stanley -- Price Target Lowered to $4.0"
+    },
+    "evt:39e68df573d6": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "What Makes Bio-Techne (TECH) a Good Bet Following Its Buyout?"
+    },
+    "evt:8161ebb42892": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "通用“进厂”为降本、小鹏“驻店”求增效 车企竞速布局机器人赛道"
+    },
+    "evt:06474827d604": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "小鹏NGP率先开放欧洲公众体验，目标明年上半年首批交付"
+    },
+    "evt:ba21a59481cf": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "三秒节拍“考”住人形机器人：车企撤下产线试点，转向人机协同"
+    },
+    "evt:38aa77c11a7a": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "国内人形机器人密集释放量产信号，单日产能拉升至240台"
+    },
+    "evt:36621095e2c7": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "Astra围猎具身模型，最后的防线在哪儿"
+    },
+    "evt:9386f92d391e": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "一周要闻|Optimus拟18个月内胜任家务；黑芝麻智能在深圳成立具身智能总部"
+    },
+    "evt:526356a2f9a2": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "三连超级月亮要来了！看哪里将上演皓月当空"
+    },
+    "evt:1aebdd5f5201": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "双足机器人平衡控制系统：传统动力学控制向模型数据融合控制演进"
+    },
+    "evt:dc20712f967f": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "书卷流转 文脉绵长（校馆弦歌）"
+    },
+    "evt:ac2608bfb2fa": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "宇树科技罕见涨停！机器人ETF华安(159039)强势涨近9%"
+    },
+    "evt:86de2d74a76c": {
+      "first_seen_week": "2026-W48",
+      "last_seen_week": "2026-W48",
+      "title": "机器人涨停潮又来了？板块新一轮行情开启？"
     }
   }
 }
